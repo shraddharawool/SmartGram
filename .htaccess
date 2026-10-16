@@ -1,0 +1,15 @@
+Options -Indexes
+
+DirectoryIndex index.php
+
+<FilesMatch "\.(sql|log|ini|bak|backup|env)$">
+    Require all denied
+</FilesMatch>
+
+<Files "includes/db.php">
+    Require all denied
+</Files>
+
+<Files ".htaccess">
+    Require all denied
+</Files>
